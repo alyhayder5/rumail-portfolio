@@ -1,0 +1,52 @@
+{
+  "name": "ufusion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "ts-check": "tsc --skipLibCheck --noEmit",
+    "precommit": "lint-staged --concurrent false",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.7",
+    "@react-three/fiber": "^9.1.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.3",
+    "install": "^0.13.0",
+    "lucide-react": "^0.503.0",
+    "motion": "^12.6.3",
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.5.0",
+    "react-marquee-slider": "^1.1.5",
+    "react-simple-typewriter": "^5.0.1",
+    "swiper": "^11.2.6",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.175.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "tailwindcss": "^4",
+    "three": "^0.175.0",
+    "typescript": "^5"
+  }
+}

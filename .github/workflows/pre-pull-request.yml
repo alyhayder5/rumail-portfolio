@@ -1,0 +1,38 @@
+name: Pre Pull Request Checks
+
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9.1.2
+
+      - name: Use Node.js 22.0.0
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.0.0
+          cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run linters
+        run: pnpm run lint
+
+      - name: Run typescript checks
+        run: pnpm run ts-check
+
+      - name: Generate build
+        run: |
+          export NODE_OPTIONS="--max-old-space-size=4096"  
+          pnpm run build
