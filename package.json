@@ -18,6 +18,7 @@
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
     "clsx": "^2.1.1",
+    "critters": "^0.0.25",
     "framer-motion": "^12.6.3",
     "install": "^0.13.0",
     "lucide-react": "^0.503.0",
