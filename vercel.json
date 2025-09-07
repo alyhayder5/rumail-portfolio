@@ -8,7 +8,7 @@
           "value": "^(?!ufusion\\.co$).*"
         }
       ],
-      "destination": "https://ufusion.co/$1",
+      "destination": "https://rumailabbas.vercel.app/$1",
       "permanent": true
     }
   ]
