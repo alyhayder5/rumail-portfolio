@@ -1,6 +1,6 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Home, User, Briefcase, Mail, Code } from 'lucide-react';
 
 export default function Navigation() {
@@ -11,13 +11,16 @@ export default function Navigation() {
   const backgroundOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 0.95]);
   const blur = useTransform(scrollYProgress, [0, 0.1], [0, 10]);
 
-  const navItems = [
-    { id: 'hero', label: 'Home', icon: Home },
-    { id: 'about', label: 'About', icon: User },
-    { id: 'projects', label: 'Projects', icon: Code },
-    { id: 'experience', label: 'Experience', icon: Briefcase },
-    { id: 'contact', label: 'Contact', icon: Mail },
-  ];
+  const navItems = useMemo(
+    () => [
+      { id: 'hero', label: 'Home', icon: Home },
+      { id: 'about', label: 'About', icon: User },
+      { id: 'projects', label: 'Projects', icon: Code },
+      { id: 'experience', label: 'Experience', icon: Briefcase },
+      { id: 'contact', label: 'Contact', icon: Mail },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +40,7 @@ export default function Navigation() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navItems]);
 
   return (
     <>

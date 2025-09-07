@@ -255,7 +255,7 @@ export default function ContactSection() {
             whileHover={{ scale: 1.05 }}
           >
             <Heart size={16} />
-            Let's Connect
+            Let&apos;s Connect
             <Rocket size={16} />
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-extrabold mb-6">
@@ -268,8 +268,9 @@ export default function ContactSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Let's discuss your next project and create something extraordinary
-            together. I'm always excited to work on new challenges!
+            Let&apos;s discuss your next project and create something
+            extraordinary together. I&apos;m always excited to work on new
+            challenges!
           </p>
         </motion.div>
 
@@ -286,10 +287,10 @@ export default function ContactSection() {
               Get In Touch
             </h3>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
-              I'm always interested in new opportunities and exciting projects.
-              Whether you have a question, want to collaborate, or just want to
-              say hi, feel free to reach out! I typically respond within 24
-              hours.
+              I&apos;m always interested in new opportunities and exciting
+              projects. Whether you have a question, want to collaborate, or
+              just want to say hi, feel free to reach out! I typically respond
+              within 24 hours.
             </p>
 
             {/* Contact Info Cards */}
@@ -476,7 +477,7 @@ export default function ContactSection() {
                 >
                   <div className="flex items-center justify-center gap-2">
                     <Heart size={20} className="text-green-400" />
-                    Message sent successfully! I'll get back to you soon.
+                    Message sent successfully! I&apos;ll get back to you soon.
                   </div>
                 </motion.div>
               )}

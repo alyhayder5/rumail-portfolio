@@ -2,7 +2,8 @@
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useRef, useMemo, Suspense } from 'react';
-import { Mesh, InstancedMesh, Color } from 'three';
+import { InstancedMesh } from 'three';
+import * as THREE from 'three';
 import { RoundedBox, Sphere, Torus } from '@react-three/drei';
 
 // Performance-optimized floating geometric shapes
@@ -101,20 +102,6 @@ function ParticleField() {
   // Reduce particles on mobile for better performance
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
   const particleCount = isMobile ? 25 : 50;
-
-  const particles = useMemo(() => {
-    const positions = new Float32Array(particleCount * 3);
-    const scales = new Float32Array(particleCount);
-
-    for (let i = 0; i < particleCount; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 25;
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 25;
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 25;
-      scales[i] = Math.random() * 0.5 + 0.1;
-    }
-
-    return { positions, scales };
-  }, []);
 
   useFrame((state) => {
     if (meshRef.current) {
