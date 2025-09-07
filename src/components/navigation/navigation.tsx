@@ -70,7 +70,7 @@ export default function Navigation() {
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-white font-bold text-xl hidden sm:block">
+              <span className="text-white font-bold text-xl block">
                 Rumí
               </span>
             </motion.div>
