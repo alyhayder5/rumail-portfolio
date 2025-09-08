@@ -19,7 +19,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 2,
-      title: 'Check-QR Pay',
+      title: 'Check QR Pay',
       description:
         'Increase productivity and reduce costs with Check, the comprehensive solution for ordering and paying from any QR code without registration.',
       image: '/api/placeholder/600/400',
@@ -263,8 +263,8 @@ export default function ProjectsSection() {
             <Zap size={16} />
           </motion.div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A showcase of innovative projects that demonstrate my expertise in
-            creating cutting-edge digital solutions
+            Here are some of the projects I’ve worked on each one a mix of
+            creativity, problem solving & a lot of late night coding sessions.
           </p>
         </motion.div>
 

@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Github, Mail, Download, Sparkles, Zap, Code2 } from 'lucide-react';
+import { Mail, Download, Sparkles, Zap, Code2 } from 'lucide-react';
 import { Image } from '../image';
 import Modern3DScene from './components/modern-3d-scene';
 import { FaUpwork } from 'react-icons/fa6';
@@ -119,17 +119,6 @@ export default function HeroSection() {
                 className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-red-500/20 hover:to-pink-500/20 hover:border-red-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25"
               >
                 <Mail
-                  size={24}
-                  className="text-gray-300 group-hover:text-white transition-colors duration-300"
-                />
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
-              >
-                <Github
                   size={24}
                   className="text-gray-300 group-hover:text-white transition-colors duration-300"
                 />

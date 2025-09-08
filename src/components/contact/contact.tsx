@@ -6,7 +6,6 @@ import {
   Phone,
   MapPin,
   Send,
-  Github,
   MessageCircle,
   Star,
   Zap,
@@ -193,11 +192,11 @@ export default function ContactSection() {
 
   const socialLinks = [
     {
-      icon: Github,
-      href: 'https://github.com/rumailabbas512',
-      label: 'GitHub',
-      color: 'hover:text-gray-300',
-      description: 'Check out my code',
+      icon: FaUpwork,
+      href: 'mailto:https://www.upwork.com/freelancers/~01ec71a161e390a603',
+      label: 'Upwork',
+      color: 'hover:text-green-400',
+      description: 'Send me a message',
     },
     {
       icon: Linkedin,
@@ -211,13 +210,6 @@ export default function ContactSection() {
       href: 'mailto:rumail.abbas@example.com',
       label: 'Email',
       color: 'hover:text-red-400',
-      description: 'Send me a message',
-    },
-    {
-      icon: FaUpwork,
-      href: 'mailto:https://www.upwork.com/freelancers/~01ec71a161e390a603',
-      label: 'Upwork',
-      color: 'hover:text-green-400',
       description: 'Send me a message',
     },
   ];
