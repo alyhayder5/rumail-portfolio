@@ -6,10 +6,13 @@ import Contact from '@/components/contact/contact';
 import Navigation from '@/components/navigation/navigation';
 import AnimatedCursor from '@/components/animated-cursor';
 import PerformanceOptimizer from '@/components/performance-optimizer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-slate-900">
+      <ToastContainer position="top-center" autoClose={3000} />
       <PerformanceOptimizer />
       <Navigation />
       <AnimatedCursor />

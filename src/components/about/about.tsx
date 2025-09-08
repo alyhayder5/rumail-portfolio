@@ -171,7 +171,7 @@ export default function AboutSection() {
                 {' '}
                 With{' '}
                 <span className="text-blue-400 font-semibold">
-                  7+ years of full-stack experience
+                  7+ years of full stack experience
                 </span>
                 , I’ve partnered with startups and established teams to bring
                 ideas from concept to launch. I enjoy building{' '}

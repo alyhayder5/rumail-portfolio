@@ -66,13 +66,12 @@ export default function Navigation() {
               className="flex items-center gap-3"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
+              id="#home"
             >
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
-              <span className="text-white font-bold text-xl block">
-                Rumí
-              </span>
+              <span className="text-white font-bold text-xl block">Rumí</span>
             </motion.div>
           </div>
         </div>

@@ -1,16 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Download,
-  Sparkles,
-  Zap,
-  Code2,
-} from 'lucide-react';
+import { Github, Mail, Download, Sparkles, Zap, Code2 } from 'lucide-react';
 import { Image } from '../image';
 import Modern3DScene from './components/modern-3d-scene';
+import { FaUpwork } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -18,7 +12,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      id="#home"
+    >
       {/* Modern 3D Background */}
       <Modern3DScene />
 
@@ -107,23 +104,12 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <a
-                href="https://github.com"
+                href="https://www.upwork.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
               >
-                <Github
-                  size={24}
-                  className="text-gray-300 group-hover:text-white transition-colors duration-300"
-                />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-blue-500/20 hover:to-cyan-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
-              >
-                <Linkedin
+                <FaUpwork
                   size={24}
                   className="text-gray-300 group-hover:text-white transition-colors duration-300"
                 />
@@ -133,6 +119,17 @@ export default function HeroSection() {
                 className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-red-500/20 hover:to-pink-500/20 hover:border-red-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25"
               >
                 <Mail
+                  size={24}
+                  className="text-gray-300 group-hover:text-white transition-colors duration-300"
+                />
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 rounded-xl hover:from-blue-500/20 hover:to-purple-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
+              >
+                <Github
                   size={24}
                   className="text-gray-300 group-hover:text-white transition-colors duration-300"
                 />
@@ -165,7 +162,14 @@ export default function HeroSection() {
                   Get In Touch
                 </span>
               </button>
-              <button className="group px-6 py-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 text-white font-bold rounded-xl hover:from-slate-700/50 hover:to-slate-600/50 hover:border-slate-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+              <button
+                onClick={() => {
+                  setTimeout(() => {
+                    toast.error('Some thing went wrong !');
+                  }, 1500);
+                }}
+                className="group px-6 py-4 bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm border border-slate-600/50 text-white font-bold rounded-xl hover:from-slate-700/50 hover:to-slate-600/50 hover:border-slate-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              >
                 <Download size={20} />
                 Resume
               </button>
@@ -259,7 +263,7 @@ export default function HeroSection() {
 
         {/* Enhanced Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 sm:flex hidden flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}

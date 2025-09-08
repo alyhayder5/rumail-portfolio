@@ -150,16 +150,8 @@ export default function ExperienceSection() {
       color: 'from-orange-500 to-yellow-500',
     },
     {
-      id: 2,
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2022',
-      credential: 'GCP-PD-002',
-      color: 'from-blue-500 to-cyan-500',
-    },
-    {
       id: 3,
-      name: 'React Developer Certification',
+      name: 'React Native Developer Certification',
       issuer: 'Meta',
       date: '2021',
       credential: 'META-REACT-003',
@@ -167,11 +159,11 @@ export default function ExperienceSection() {
     },
     {
       id: 4,
-      name: 'Node.js Application Developer',
-      issuer: 'OpenJS Foundation',
-      date: '2020',
-      credential: 'NODE-AD-004',
-      color: 'from-green-500 to-emerald-500',
+      name: 'Vue.js Developer Certification',
+      issuer: 'Coursera',
+      date: '2023',
+      credential: 'Coursera-PD-1909',
+      color: 'from-cyan-500 to-blue-500',
     },
   ];
 

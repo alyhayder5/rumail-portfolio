@@ -102,7 +102,7 @@ export default function ProjectsSection() {
       ],
       featured: false,
       category: 'spirituality',
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://www.moonblissapp.com/en',
     },
     {
       id: 4,
