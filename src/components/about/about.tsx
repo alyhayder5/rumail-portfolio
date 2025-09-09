@@ -117,6 +117,7 @@ export default function AboutSection() {
     'Jest',
     'Cypress',
     'Playwright',
+    'more...',
   ];
 
   return (
@@ -147,8 +148,8 @@ export default function AboutSection() {
             <Trophy size={16} />
           </motion.div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transforming ideas into extraordinary digital experiences through
-            innovative design and cutting-edge development
+            I build something that (hopefully) run smoother than my code on the
+            first compile.
           </p>
         </motion.div>
 
@@ -168,25 +169,23 @@ export default function AboutSection() {
                 <h3 className="text-3xl font-bold text-white">My Journey</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                {' '}
                 With{' '}
                 <span className="text-blue-400 font-semibold">
-                  7+ years of full-stack experience
+                  7+ years of experience as a full stack developer
                 </span>
-                , I’ve partnered with startups and established teams to bring
-                ideas from concept to launch. I enjoy building{' '}
+                , working with both startups and established companies to turn
+                ideas into real products. I care about building{' '}
                 <span className="text-purple-400 font-semibold">
-                  fast, seamless, and human-focused
+                  fast, reliable, and user friendly
                 </span>{' '}
-                applications that actually make a difference.{' '}
-              </p>{' '}
-              <p className="text-gray-300 leading-relaxed text-lg">
-                {' '}
-                I’m always curious about new tech and love exploring better ways
-                to solve problems. Outside of coding, you’ll usually find me
-                diving into design trends, contributing to open source, or
-                sharing what I’ve learned with other developers.{' '}
+                applications that people actually enjoy using.
               </p>
+              <p className="text-gray-300 leading-relaxed text-lg">
+                I’m always learning new tools and techniques to improve the way
+                I work. When I’m not coding, I like exploring design trends &
+                sharing knowledge with other developers.
+              </p>
+
               {/* Enhanced Stats */}
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <motion.div

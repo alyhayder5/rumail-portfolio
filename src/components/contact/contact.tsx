@@ -6,18 +6,17 @@ import {
   Phone,
   MapPin,
   Send,
-  Github,
-  Linkedin,
-  Twitter,
   MessageCircle,
   Star,
   Zap,
   Rocket,
   Heart,
+  Linkedin,
 } from 'lucide-react';
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
+import { FaUpwork } from 'react-icons/fa6';
 import * as THREE from 'three';
 
 // 3D Particle System for Contact
@@ -160,23 +159,23 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: 'Email',
-      value: 'rumail.abbas@example.com',
-      href: 'mailto:rumail.abbas@example.com',
+      value: 'rumailabbas.ufusion@gmail.com',
+      href: 'mailto:rumailabbas.ufusion@gmail.com',
       color: 'from-blue-500 to-cyan-500',
       description: 'Send me an email anytime',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+92 343 5105038',
+      href: 'tel:+923435105038',
       color: 'from-green-500 to-emerald-500',
       description: 'Call me for urgent matters',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Gilgit, Pakistan',
       href: '#',
       color: 'from-purple-500 to-pink-500',
       description: 'Available for remote work',
@@ -184,8 +183,8 @@ export default function ContactSection() {
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      value: '+1 (555) 123-4567',
-      href: 'https://wa.me/15551234567',
+      value: '+92 343 5105038',
+      href: 'https://wa.me/03435105038',
       color: 'from-green-600 to-emerald-600',
       description: 'Quick chat on WhatsApp',
     },
@@ -193,11 +192,11 @@ export default function ContactSection() {
 
   const socialLinks = [
     {
-      icon: Github,
-      href: 'https://github.com',
-      label: 'GitHub',
-      color: 'hover:text-gray-300',
-      description: 'Check out my code',
+      icon: FaUpwork,
+      href: 'mailto:https://www.upwork.com/freelancers/~01ec71a161e390a603',
+      label: 'Upwork',
+      color: 'hover:text-green-400',
+      description: 'Send me a message',
     },
     {
       icon: Linkedin,
@@ -205,13 +204,6 @@ export default function ContactSection() {
       label: 'LinkedIn',
       color: 'hover:text-blue-400',
       description: 'Connect professionally',
-    },
-    {
-      icon: Twitter,
-      href: 'https://twitter.com',
-      label: 'Twitter',
-      color: 'hover:text-blue-300',
-      description: 'Follow for updates',
     },
     {
       icon: Mail,
@@ -303,6 +295,7 @@ export default function ContactSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
+                  target="_blank"
                   className="group flex items-center gap-6 p-6 bg-gradient-to-r from-slate-900/50 to-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25"
                 >
                   <div
